@@ -38,3 +38,8 @@ The form prevents the submission of the data entered on any error encountered, a
 It has no success state for submission aside the logging to console.
 
 ### AI Mistake
+
+In round one, the AI omitted adding accessibility features because I didn't ask it to.
+But in round two, those were added because I specifically instructed it to add those.
+
+The password validation in round two only checked for length of the password, but omitted checking for special characters and numbers, which is part of a strong password check.
