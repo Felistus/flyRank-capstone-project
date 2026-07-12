@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Copilot Instructions
 
 ## Project
