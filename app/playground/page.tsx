@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CustomModal from "./CustomModal";
 import CustomTab from "./CustomTab";
+import CustomDisclosure from "./CustomDisclosure";
 
 export default function Playground() {
   const [open, setOpen] = useState<boolean>(false);
@@ -26,6 +27,9 @@ export default function Playground() {
           </div>
           <div>
             <CustomTab />
+          </div>
+          <div>
+            <CustomDisclosure />
           </div>
         </div>
       </main>
