@@ -8,7 +8,7 @@ export default function CustomDisclosure() {
       <div>
         <button
           onClick={() => setItem((prev) => (prev === "first" ? "" : "first"))}
-          arial-label="first item"
+          aria-label="first item"
           className="w-full bg-neutral-700 flex h-10 p-2 capitalize cursor-pointer"
         >
           first
@@ -24,7 +24,7 @@ export default function CustomDisclosure() {
       <div>
         <button
           onClick={() => setItem((prev) => (prev === "second" ? "" : "second"))}
-          arial-label="second item"
+          aria-label="second item"
           className="w-full bg-neutral-700 flex h-10 p-2 capitalize cursor-pointer"
         >
           second
@@ -40,7 +40,7 @@ export default function CustomDisclosure() {
       <div>
         <button
           onClick={() => setItem((prev) => (prev === "third" ? "" : "third"))}
-          arial-label="third item"
+          aria-label="third item"
           className="w-full bg-neutral-700 flex h-10 p-2 capitalize cursor-pointer"
         >
           third

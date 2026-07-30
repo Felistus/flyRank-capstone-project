@@ -6,11 +6,15 @@ export default function CustomModal({
   return (
     <div className="w-full h-screen fixed top-0 left-0">
       {/* Backdrop layer — this is the only thing that gets the tint */}
-      <div className="absolute inset-0 bg-black/75" />
+      <div
+        className="absolute inset-0 bg-black/75"
+        onClick={() => setOpen(false)}
+      />
 
       <div className="relative flex justify-center items-center h-full">
         <form
           action=""
+          autoFocus
           className="border border-gray-400 text-black p-4 rounded-sm w-full max-w-md space-y-3 bg-white shadow-2xl z-50"
         >
           <div>
@@ -24,8 +28,9 @@ export default function CustomModal({
               <p>Name</p>
               <input
                 type="text"
+                autoFocus
                 id="name"
-                arial-label="Name"
+                aria-label="Name"
                 className="border border-gray-400 rounded-md w-full h-10 px-1"
               />
             </label>
@@ -37,7 +42,7 @@ export default function CustomModal({
               <input
                 type="text"
                 id="username"
-                arial-label="Username"
+                aria-label="Username"
                 className="border border-gray-400 rounded-md w-full h-10 px-1"
               />
             </label>

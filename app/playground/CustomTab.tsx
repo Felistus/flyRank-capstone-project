@@ -8,21 +8,21 @@ export default function CustomTab() {
         <button
           className={`${tab === "first" ? "bg-amber-100 text-black" : "text-gray-200"} px-2 py-1 w-full rounded-md cursor-pointer`}
           onClick={() => setTab("first")}
-          arial-label="first tab"
+          aria-label="first tab"
         >
           first
         </button>
         <button
           className={`${tab === "second" ? "bg-amber-100 text-black" : "text-gray-200"} px-2 py-1 w-full rounded-md cursor-pointer`}
           onClick={() => setTab("second")}
-          arial-label="second tab"
+          aria-label="second tab"
         >
           second
         </button>
         <button
           className={`${tab === "third" ? "bg-amber-100 text-black" : "text-gray-200"} px-2 py-1 w-full rounded-md cursor-pointer`}
           onClick={() => setTab("third")}
-          arial-label="third tab"
+          aria-label="third tab"
         >
           third
         </button>
