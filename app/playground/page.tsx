@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import CustomModal from "./CustomModal";
+import CustomTab from "./CustomTab";
 
 export default function Playground() {
   const [open, setOpen] = useState<boolean>(false);
@@ -11,7 +12,7 @@ export default function Playground() {
         <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
           Playground
         </h1>
-        <div className="mt-4">
+        <div className="mt-4 space-y-4">
           <div>
             <button
               arial-label="Open modal"
@@ -22,6 +23,9 @@ export default function Playground() {
             </button>
 
             {open && <CustomModal setOpen={setOpen} />}
+          </div>
+          <div>
+            <CustomTab />
           </div>
         </div>
       </main>
